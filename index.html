@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ayurvedic Plants Explorer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body class="image bg-gray-100 ">
+    <header class="bg-gradient-to-r from-green-400 to-green-400 text-white shadow-lg  ">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo and Title -->
+                <div class="flex items-center space-x-4">
+                    <a href="index.html"><img src="assets/Ayurvata-removebg-preview.png" alt="Logo" style="width: 120px;"></a>
+                </div>
+    
+                <!-- Desktop Search Bar -->
+                <!-- <div class="relative flex-1 max-w-xl mx-8 hidden md:block">
+                    <input 
+                        type="search" 
+                        id="searchInput"
+                        class="w-full px-6 py-3 rounded-full bg-white text-gray-800 border border-gray-300 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+                        placeholder="Search Plants..."
+                    >
+                    <div id="searchResults" class="search-results hidden absolute w-full mt-2 bg-white rounded-lg shadow-xl z-50"></div>
+                </div>-->
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6" style="font-size: 20px;">
+                    <!-- <div class="relative flex-1 max-w-xs mx-2 hidden md:block pr-8">
+                        <input 
+                            type="search" 
+                            id="searchInput"
+                            class="w-full px-2 py-2 rounded-full bg-white text-gray-800 border border-gray-300 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+                            placeholder="Search Plants..."
+                        >
+                        <div id="searchResults" class="search-results hidden absolute w-full mt-2 bg-white rounded-lg shadow-xl z-50"></div>
+                    </div> -->
+                    <a href="index.html" class="hover:text-green-300 transition">Home</a>
+                    <a href="plant.html" class="hover:text-green-300 transition">Plants</a>
+                    <a href="about.html" class="hover:text-green-300 transition">About</a>
+                    <a href="contact.html" class="hover:text-green-300 transition">Contact</a>
+                </div>
+                
+    
+                <!-- Mobile Navigation Controls -->
+                <div class="flex items-center md:hidden">
+                    <!-- Search Toggle Button -->
+                    <button id="mobileSearchToggle" class="mr-4">
+                        <i class="ri-search-line text-xl"></i>
+                    </button>
+    
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobileMenuToggle">
+                        <i class="ri-menu-line text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Mobile Search -->
+        <div id="mobileSearchContainer" class="mobile-search-container hidden px-6 py-4">
+            <input 
+                type="search" 
+                id="mobilePlantSearch"
+                class="w-full px-4 py-3 rounded-lg bg-white text-gray-800 border border-gray-300 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+                placeholder="Search Plants..."
+            >
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu hidden fixed inset-0 bg-green-800 text-white p-6 z-50">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-bold">Menu</h2>
+                <button id="closeMenu" class="text-white">
+                    <i class="ri-close-line text-2xl"></i>
+                </button>
+            </div>
+            <a href="index.html" class="block py-2 hover:text-green-300">Home</a>
+            <a href="plant.html" class="block py-2 hover:text-green-300">Plants</a>
+            <a href="about.html" class="block py-2 hover:text-green-300">About</a>
+            <a href="contact.html" class="block py-2 hover:text-green-300">Contact</a>
+        </div>
+    </header>
+    
+    <!-- Home page -->
+    <header>
+        <h1>Welcome to Ayurvata: Your Virtual Herbal Garden</h1>
+        <p style="color: white;">Discover the Wonders of AYUSH!!!</p>
+    </header>
+
+    <main>
+        <section>
+          <b><h2 style="text-align: center;">What is AYUSH?</h2></b>  
+          <b> <p style="color: #ffffff;">
+                AYUSH stands for Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy, the traditional systems
+                of medicine recognized and promoted by the Government of India. Each system brings its unique approach
+                to health and wellness, rooted in natural remedies and holistic practices.
+            </p></b> 
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Ayurveda</h3>
+                <p>An ancient system of medicine focusing on balance and harmony within the body through diet, herbal treatments, and lifestyle adjustments.</p>
+            </div>
+            <div class="card">
+                <h3>Yoga & Naturopathy</h3>
+                <p>Emphasizes self-healing through natural remedies, physical postures, and holistic health practices.</p>
+            </div>
+           
+            <div class="card">
+                <h3>Siddha</h3>
+                <p>A South Indian tradition of medicine using herbs, minerals, and other natural substances to restore balance and health.</p>
+            </div>
+            <div class="card">
+                <h3>Homeopathy</h3>
+                <p>A system of medicine based on the principle of "like cures like," using highly diluted substances to stimulate the body’s healing processes.</p>
+            </div>
+        </section>
+    </main>
+
+
+    
+    <!-- Footer -->
+    <footer class="footer-gradient text-white py-8 mt-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Ayurvedic Plants Explorer</h3>
+                    <p class="text-sm opacity-80 text-white">
+                        Discover the healing power of Ayurvedic plants through an interactive
+                        3D exploration platform.
+                    </p>
+                    
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-green-200 transition">About Ayurveda</a></li>
+                        <li><a href="#" class="hover:text-green-200 transition">Plant Encyclopedia</a></li>
+                        <li><a href="#" class="hover:text-green-200 transition">Research & Studies</a></li>
+                        <li><a href="#" class="hover:text-green-200 transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-hover text-2xl">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </a>
+                        <a href="#" class="social-hover text-2xl">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="social-hover text-2xl">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="#" class="social-hover text-2xl">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                    </div>
+                    <div class="mt-4 text-sm opacity-80">
+                        <p class="text-sm opacity-80 text-white">Subscribe to our newsletter for latest updates</p>
+                        <div class="flex mt-2">
+                            <input type="email" placeholder="Enter your email"
+                                class="w-full px-2 py-1 rounded-l text-green-900">
+                            <button class="bg-white text-green-700 px-3 py-1 rounded-r">
+                                Send
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-green-700 mt-6 pt-4 text-center">
+                <p class="text-sm opacity-80 text-white">
+                    © 2024 Ayurvata. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
